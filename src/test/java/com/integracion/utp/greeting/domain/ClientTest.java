@@ -11,7 +11,7 @@ class ClientTest {
     @Test
     void getId() {
         Client client = new Client();
-        client.setId(1);
+        client.setId(-11);
         assertEquals(1, client.getId());
     }
 

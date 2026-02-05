@@ -15,8 +15,10 @@ public class Client {
     public void setId(Integer id)  {
         if (id==null){
             throw new NullPointerException("El id del cliente es null");
-        }else {
+        }else if (id>0) {
             this.id = id;
+        }else{
+            throw new IllegalArgumentException("El id del cliente es negativo");
         }
     }
 
