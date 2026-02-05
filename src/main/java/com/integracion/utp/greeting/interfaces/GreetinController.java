@@ -12,7 +12,7 @@ public class GreetinController {
 
     @GetMapping("/saludo")
     public String saludar(@RequestParam String nombre){
-        return "Hola " + nombre +" tu eres el futuro programador IA";
+        return "Hola " + nombre +" tu eres el futuro programador IA de la UTP";
     }
 
 
